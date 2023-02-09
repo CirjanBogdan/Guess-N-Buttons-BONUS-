@@ -2,6 +2,11 @@ function generateButtons() {
     let element = document.getElementById("div");
     let btns = document.getElementById("btns"); 
     let input = document.getElementById("userInput").value;
+    if (input < 1) {
+        document.getElementById("lessOne").innerHTML = "Choose a number greather than 0!";
+    } else {
+        document.getElementById("chooseButton").innerHTML = "Choose the winning Button!";  
+    }
     const randomNumber = Math.floor(Math.random() * input + 1);
     element.style.display = "none";
     document.getElementById("chooseButton").innerHTML = "Choose the winning Button!";        
