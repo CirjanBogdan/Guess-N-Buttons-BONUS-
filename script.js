@@ -3,7 +3,7 @@ function generateButtons() {
     let btns = document.getElementById("btns"); 
     let input = document.getElementById("userInput").value;
     if (input < 1) {
-        document.getElementById("lessOne").innerHTML = "Choose a number greather than 0!";
+        document.getElementById("lessOne").innerHTML = "Choose a number bigger than 0!";
     } else {
         document.getElementById("chooseButton").innerHTML = "Choose the winning Button!";  
     }
